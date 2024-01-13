@@ -86,7 +86,7 @@ const UserProfile = () => {
                         variant='solid'
                         m={"3"}
                         ml="14"
-                        width={{ base: "70%", lg: "29%" }}
+                        width={{ base: "70%", lg: "34%" }}
                     >
                         <option value='option1'
                             bg='#3e2edf'  // Background color

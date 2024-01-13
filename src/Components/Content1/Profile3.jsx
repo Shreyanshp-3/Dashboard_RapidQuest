@@ -33,9 +33,10 @@ const Profile3 = () => {
                 <Box bg="#EDEDED" borderRadius="3%" m={10} mt={16}>
                     <Text
                         color="black"
+                        pr={1}
                         style={{ fontFamily: 'Lora' }}
-                        ml={{ base: "2", lg: "8" }}
-                        fontSize={{ base: "1.5rem", lg: "2rem" }}
+                        ml={{ base: "2", lg: "6" }}
+                        fontSize={{ base: "1.5rem", lg: "1.8rem" }}
                         fontWeight="bold"
                         mb={{ base: "3", lg: "5" }}
                     >
@@ -98,7 +99,7 @@ const Profile3 = () => {
                         <Text color="black">5%</Text>
                     </Box>
                     <br />
-                    <Button ml={{ base: "2", lg: "8" }} width={isMobile ? "100%" : { base: "280px", lg: "315px" }} height={50} bg="#4935ff" variant="solid">
+                    <Button ml={{ base: "2", lg: "8" }} width={isMobile ? "100%" : { base: "280px", lg: "85%",xl:"330" }} height={50} bg="#4935ff" variant="solid">
                         Update
                     </Button>
                     <br />
