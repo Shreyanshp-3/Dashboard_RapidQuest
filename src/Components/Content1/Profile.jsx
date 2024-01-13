@@ -7,7 +7,8 @@ const UserProfile = () => {
         <>
             <Box
                 bg={"#fafafa"}
-                pb={"12"}>
+            // pb={"12"}
+            >
                 <WrapItem>
                     <Flex align="center" m={14} mb={10}>
                         <Avatar size='lg' name='Christian Nwamba' src='https://bit.ly/code-beast' />
@@ -50,30 +51,34 @@ const UserProfile = () => {
                             Account Balance
                         </StatHelpText>
                     </Stat>
-                    <Stat
-                        ml="14"
-                        color={"black"}
-                        mb={"2.5"}
-                    >
-                        <StatNumber fontSize={"1rem"}>$4,000</StatNumber>
-                        <StatHelpText
-                            color="gray"
+                    <Box display={{ base: "flex"}}>
+
+                        <Stat
+                            ml="14"
+                            color={"black"}
+                            mb={"2.5"}
                         >
-                            Year-to-Date Contributions
-                        </StatHelpText>
-                    </Stat>
-                    <Stat
-                        ml="14"
-                        color={"black"}
-                        mb={"3.5"}
-                    >
-                        <StatNumber fontSize={"1rem"}>$19,892</StatNumber>
-                        <StatHelpText
-                            color="gray"
+                            <StatNumber fontSize={"1rem"}>$4,000</StatNumber>
+                            <StatHelpText
+                                color="gray"
+                            >
+                                Year-to-Date Contributions
+                            </StatHelpText>
+                        </Stat>
+                        <Stat
+                            ml={{ base: "4", lg: "14" }}
+                            color={"black"}
+                            mb={"3.5"}
                         >
-                            Total Interest
-                        </StatHelpText>
-                    </Stat>
+                            <StatNumber fontSize={"1rem"}>$19,892</StatNumber>
+                            <StatHelpText
+                                color="gray"
+                            >
+                                Total Interest
+                            </StatHelpText>
+                        </Stat>
+                    </Box>
+
                     <Select
                         placeholder='I want to '
                         bg='#3e2edf'  // Background color
@@ -81,7 +86,7 @@ const UserProfile = () => {
                         variant='solid'
                         m={"3"}
                         ml="14"
-                        width={"29%"}
+                        width={{ base: "70%", lg: "29%" }}
                     >
                         <option value='option1'
                             bg='#3e2edf'  // Background color
@@ -103,7 +108,10 @@ const UserProfile = () => {
                         Recent Transactions
                     </Text>
                     <br />
-                    <Stat ml="14" color="black" mb="3.5">
+
+
+                    {/* the last transcation section */}
+                    <Stat ml="14" mr={"5"} color="black" mb="3.5">
                         <StatHelpText color="gray">2020-08-07</StatHelpText>
                         <StatNumber fontSize="1rem">Withdrawal Transfer to Bank-XXX11</StatNumber>
                     </Stat>
