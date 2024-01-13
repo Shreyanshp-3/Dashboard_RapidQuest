@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+
+Read me -> I made a mistake while developing I used a bigger screen than that to the regular so there might some drawbacks in the regular screen
+Please if possible view it in  bigger screen for exact results
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
