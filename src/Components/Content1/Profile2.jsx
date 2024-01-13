@@ -9,15 +9,18 @@ const Profile2 = () => {
     return (
         <>
 
+
             <Box
+                // mt={0}
                 bg={"white"}
                 m={12}
+
             >
                 <Text
                     color="#3e2edf"
                     fontSize="1rem"
                     style={{ fontFamily: 'Lora' }}
-                    ml="8"
+                    ml={{ base: "0", lg: "8" }}
                     mb={"2"}
                 >
                     Retirement Income
@@ -26,7 +29,8 @@ const Profile2 = () => {
                     color="black"
                     fontSize="1.4rem"
                     style={{ fontFamily: 'Lora' }}
-                    ml="8"
+                    ml={{ base: "0", lg: "8" }}
+
                     fontWeight="bold"
 
                     mb={"2"}
@@ -39,11 +43,12 @@ const Profile2 = () => {
                 } */}
 
                 <Box
-                    display={"flex"}
+                    display={{ base: "block", lg: "flex" }}
                     mb={5}
                 >
                     <Stat
-                        ml="8"
+                        ml={{ base: "0", lg: "8" }}
+
                         color={"black"}
                         mb={"2.5"}
                     >
@@ -53,43 +58,46 @@ const Profile2 = () => {
                         >
                             My Goal
                         </StatHelpText>
-                        <Divider width={"230px"} mr={0} ml={0} borderColor="#3e2edf" />
+                        <Divider width={{ base: "300px", lg: "230px" }} mr={0} ml={0} borderColor="#3e2edf" />
 
                     </Stat>
-                    <Stat
-                        ml="8"
-                        color={"black"}
-                        mb={"2.5"}
-                    >
-                        <StatNumber fontSize={"2rem"}>59%</StatNumber>
-                        <StatHelpText
-                            color="gray"
+                    <Box display={{ base: "flex" }}>
+
+                        <Stat
+                            ml={{ base: "0", lg: "8" }}
+                            color={"black"}
+                            mb={"2.5"}
                         >
-                            Goal Achieved
-                        </StatHelpText>
-                        <Divider width={"230px"} mr={0} ml={0} borderColor="#3e2edf" />
+                            <StatNumber fontSize={"2rem"}>59%</StatNumber>
+                            <StatHelpText
+                                color="gray"
+                            >
+                                Goal Achieved
+                            </StatHelpText>
+                            <Divider width={{ base: "130px", lg: "230px" }} mr={0} ml={0} borderColor="#3e2edf" />
 
-                    </Stat>
-                    <Stat
-                        ml="8"
-                        color={"black"}
-                        mb={"3.5"}
-                    >
-                        <StatNumber fontSize={"2rem"}>$300</StatNumber>
-                        <StatHelpText
-                            color="gray"
+                        </Stat>
+                        <Stat
+                            ml={{ base: "0", lg: "8" }}
+                            color={"black"}
+                            mb={"3.5"}
                         >
-                            Est. Monthly Income
-                        </StatHelpText>
-                        <Divider width={"230px"} mr={0} ml={0} borderColor="#3e2edf" />
+                            <StatNumber fontSize={"2rem"}>$300</StatNumber>
+                            <StatHelpText
+                                color="gray"
+                            >
+                                Est. Monthly Income
+                            </StatHelpText>
+                            <Divider width={{ base: "150px", lg: "230px" }} mr={0} ml={0} borderColor="#3e2edf" />
 
-                    </Stat>
+                        </Stat>
+                    </Box>
                 </Box>
                 <Text
                     color="black"
                     fontSize="1.4rem"
                     style={{ fontFamily: 'Lora' }}
-                    ml="8"
+                    ml={{ base: "0", lg: "8" }}
                     fontWeight="bold"
                     mb={"2"}
                 >
@@ -98,65 +106,81 @@ const Profile2 = () => {
                 <Box className='graph'>
                     {/* <Text> for the names</Text> */}
                     <Box
-                        display={"flex"}
-                    >
-                        <Text
-                            color="gray"
-                            fontSize="1rem"
-                            ml="8"
-                            fontWeight="bold"
-                            mb={"2"}
+                        display={{ base: "flex", lg: "flex" }} >
+                        <Box
+                            display={{ base: "block", lg: "flex" }} >
                         >
-                            Exployer:
-                        </Text>
-                        <Text
-                            color="black"
-                            fontSize="1rem"
-                            ml="2"
-                            mr="15"
-                            fontWeight="bold"
-                            mb={"2"}
+
+                            <Text
+                                color="gray"
+                                fontSize="1rem"
+                                ml={{ base: "0", lg: "8" }}
+                                fontWeight="bold"
+                                mb={"2"}
+                            >
+                                Exployer:
+                            </Text>
+                            <Text
+                                color="black"
+                                fontSize="1rem"
+                                ml="2"
+                                mr="15"
+                                fontWeight="bold"
+                                ml={{ base: "", lg: "2" }}
+                            >
+                                K 73,500
+                            </Text>
+
+                        </Box>
+                        <Box
+                            display={{ base: "block", lg: "flex" }} >
                         >
-                            K 73,500
-                        </Text>
-                        <Text
-                            color="gray"
-                            fontSize="1rem"
-                            ml="8"
-                            fontWeight="bold"
-                            mb={"2"}
+                            <Text
+                                color="gray"
+                                fontSize="1rem"
+                                ml={{ base: "4", lg: "8" }}
+                                fontWeight="bold"
+                                mb={"2"}
+                            >
+                                Exployee:
+                            </Text>
+                            <Text
+                                color="black"
+                                fontSize="1rem"
+                                ml="2"
+                                mr="15"
+                                fontWeight="bold"
+                                ml={{ base: "4", lg: "2" }}
+
+                            >
+                                K 52,500
+                            </Text>
+                        </Box>
+                        <Box
+                            display={{ base: "block", lg: "flex" }} >
                         >
-                            Exployee:
-                        </Text>
-                        <Text
-                            color="black"
-                            fontSize="1rem"
-                            ml="2"
-                            mr="15"
-                            fontWeight="bold"
-                            mb={"2"}
-                        >
-                            K 52,500
-                        </Text>
-                        <Text
-                            color="gray"
-                            fontSize="1rem"
-                            ml="8"
-                            fontWeight="bold"
-                            mb={"2"}
-                        >
-                            Exployer:
-                        </Text>
-                        <Text
-                            color="black"
-                            fontSize="1rem"
-                            ml="2"
-                            mr="15"
-                            fontWeight="bold"
-                            mb={"2"}
-                        >
-                            K 244,500
-                        </Text>
+                            <Text
+                                color="gray"
+                                fontSize="1rem"
+                                ml={{ base: "4", lg: "8" }}
+
+                                fontWeight="bold"
+                                mb={"2"}
+                            >
+                                Total Interest:
+                            </Text>
+                            <Text
+                                color="black"
+                                fontSize="1rem"
+                                ml={{ base: "4", lg: "2" }}
+
+                                mr="15"
+                                fontWeight="bold"
+                                mb={"2"}
+                            >
+                                K 244,500
+                            </Text>
+                        </Box>
 
                     </Box>
                     <BarGraph />

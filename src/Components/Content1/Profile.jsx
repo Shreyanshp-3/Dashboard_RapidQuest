@@ -51,7 +51,7 @@ const UserProfile = () => {
                             Account Balance
                         </StatHelpText>
                     </Stat>
-                    <Box display={{ base: "flex"}}>
+                    <Box display={{ base: "flex", lg: "  block" }}>
 
                         <Stat
                             ml="14"

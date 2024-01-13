@@ -91,7 +91,7 @@ const Profile3 = () => {
                 </Button>
                 <br />
                 <br />
-                <a href=''
+                <a
                 >
                     <Text ml={10} fontSize={"strong"} align={"center"} color={"#4935ff"} width={315} height={50} >
                     View Help Docs >
@@ -128,9 +128,8 @@ const Profile3 = () => {
                         >
                             Limited time reduced interest
                         </Text>
-                        <a href=''
-                        >
-                            <Text ml={7}  fontWeight={"bold"} color={"#4935ff"} width={315} height={50} >
+                        <a    >
+                            <Text ml={7} fontWeight={"bold"} color={"#4935ff"} width={315} height={50} >
                     View Help Docs >
                             </Text>
                         </a>

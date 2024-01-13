@@ -7,31 +7,41 @@ import { Hide, Show } from '@chakra-ui/react';
 import './App.css'
 const App = () => {
   return (
-    <div style={{ display: 'flex' }}>
-      {/* Sidebar */}
 
-      <Sidebar />
-      <Show above="sm">
+    <>
+      <div style={{ display: 'flex' }}>
+        {/* Sidebar */}
 
-        {/* Main Content with marginLeft to leave space for the Sidebar */}
-        <div style={{ marginLeft: '70px', width: '25%', background: '#fafafa' }}>
-          <Profile />
-        </div>
-        <div style={{ marginLeft: '-40px', width: '50%', background: '#ffffff' }}>
-          <Profile2 />
-        </div>
-        <div style={{ marginLeft: '0px', width: '26%', background: '#ffffff' }}>
-          <Profile3 />
-        </div>
+        <Sidebar />
+        <Show above="sm">
 
-      </Show >
+          {/* Main Content with marginLeft to leave space for the Sidebar */}
+          <div style={{ marginLeft: '70px', width: '25%', background: '#fafafa' }}>
+            <Profile />
+          </div>
+          <div style={{ marginLeft: '-40px', width: '50%', background: '#ffffff' }}>
+            <Profile2 />
+          </div>
+          <div style={{ marginLeft: '0px', width: '26%', background: '#ffffff' }}>
+            <Profile3 />
+          </div>
 
-      <Hide above="sm">
-        <div style={{ marginTop:'15px',marginBottom: '10px' ,width: '100%', background: '#fafafa' }}>
-          <Profile />
-        </div>
-      </Hide>
-    </div>
+        </Show >
+
+      </div>
+      <div display="block">
+
+        <Hide above="sm" >
+          <div style={{ marginTop: '25px', paddingBottom: "1px", width: '100%', background: '#fafafa' }}>
+            <Profile />
+          </div>
+          <div style={{ width: '100%',paddingTop:"1px", background: '#fafafa' }}>
+            <Profile2 />
+          </div>
+        </Hide>
+      </div>
+
+    </>
   );
 };
 
