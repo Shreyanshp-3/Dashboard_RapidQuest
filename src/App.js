@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import Sidebar from './Components/Sidebar/Sidebar.jsx';
+import Profile from './Components/Content1/Profile.jsx';
+import Profile2 from './Components/Content1/Profile2.jsx';
+import Profile3 from './Components/Content1/Profile3.jsx';
+import { Hide, Show } from '@chakra-ui/react';
+import './App.css'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex' }}>
+      {/* Sidebar */}
+
+      <Sidebar />
+      <Show above="sm">
+
+        {/* Main Content with marginLeft to leave space for the Sidebar */}
+        <div style={{ marginLeft: '70px', width: '25%', background: '#fafafa' }}>
+          <Profile />
+        </div>
+        <div style={{ marginLeft: '-40px', width: '50%', background: '#ffffff' }}>
+          <Profile2 />
+        </div>
+        <div style={{ marginLeft: '0px', width: '26%', background: '#ffffff' }}>
+          <Profile3 />
+        </div>
+
+      </Show >
+
+      <Hide above="sm">
+        <div style={{ marginTop:'15px',marginBottom: '10px' ,width: '100%', background: '#fafafa' }}>
+          <Profile />
+        </div>
+      </Hide>
     </div>
   );
-}
+};
 
 export default App;
