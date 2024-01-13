@@ -183,7 +183,7 @@ const Profile2 = () => {
                         </Box>
 
                     </Box>
-                    <BarGraph ml={{ base: "4", lg: "5" }} width={{ sm: "140%", lg: "100%" }} />
+                    <BarGraph ml={{ base: "4", lg: "5" }} width={{ sm: "10%", lg: "100%" }} />
                 </Box>
                 <br />
                 <Text
