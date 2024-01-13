@@ -11,9 +11,10 @@ const Profile2 = () => {
 
 
             <Box
-                // mt={0}
+
                 bg={"white"}
                 m={12}
+                mb={0}
 
             >
                 <Text
@@ -39,8 +40,7 @@ const Profile2 = () => {
                 </Text>
 
                 <br />
-                {/* @media only screen and (max-width: 600px) {
-                } */}
+
 
                 <Box
                     display={{ base: "block", lg: "flex" }}
@@ -58,13 +58,13 @@ const Profile2 = () => {
                         >
                             My Goal
                         </StatHelpText>
-                        <Divider width={{ base: "300px", lg: "230px" }} mr={0} ml={0} borderColor="#3e2edf" />
+                        <Divider width={{ base: "280px", lg: "230px" }} mr={0} ml={0} borderColor="#3e2edf" />
 
                     </Stat>
                     <Box display={{ base: "flex" }}>
 
                         <Stat
-                            ml={{ base: "0", lg: "8" }}
+                            ml={{ base: "0", lg: "2" }}
                             color={"black"}
                             mb={"2.5"}
                         >
@@ -78,7 +78,7 @@ const Profile2 = () => {
 
                         </Stat>
                         <Stat
-                            ml={{ base: "0", lg: "8" }}
+                            ml={{ base: "0", lg: "14" }}
                             color={"black"}
                             mb={"3.5"}
                         >
@@ -108,7 +108,7 @@ const Profile2 = () => {
                     <Box
                         display={{ base: "flex", lg: "flex" }} >
                         <Box
-                            display={{ base: "block", lg: "flex" }} >
+                            display={{ base: "block", lg: "flex" }}
                         >
 
                             <Text
@@ -133,7 +133,7 @@ const Profile2 = () => {
 
                         </Box>
                         <Box
-                            display={{ base: "block", lg: "flex" }} >
+                            display={{ base: "block", lg: "flex" }}
                         >
                             <Text
                                 color="gray"
@@ -157,7 +157,7 @@ const Profile2 = () => {
                             </Text>
                         </Box>
                         <Box
-                            display={{ base: "block", lg: "flex" }} >
+                            display={{ base: "block", lg: "flex" }}
                         >
                             <Text
                                 color="gray"
@@ -183,14 +183,14 @@ const Profile2 = () => {
                         </Box>
 
                     </Box>
-                    <BarGraph />
+                    <BarGraph ml={{ base: "4", lg: "5" }} width={{ sm: "140%", lg: "100%" }} />
                 </Box>
                 <br />
                 <Text
                     color="black"
                     fontSize="1.4rem"
                     style={{ fontFamily: 'Lora' }}
-                    ml="8"
+                    ml={{ base: "0", lg: "8" }}
                     fontWeight="bold"
                 // mb={"2"}
                 >
@@ -200,25 +200,25 @@ const Profile2 = () => {
                     color="gray"
                     fontSize="1rem"
                     style={{ fontFamily: 'Lora' }}
-                    ml="8"
+                    ml={{ base: "0", lg: "8" }}
                     // fontWeight="bold"
                     mb={"5"}
                 >
                     These number represent current goal achievement
                 </Text>
                 {/* <br/> */}
-                <Box display={"flex"}>
+                <Box display={{ base: "block", lg: "flex" }}>
                     <Box >
                         <Box display={"flex"}
                             mb={1}>
                             <Text
                                 color="gray"
                                 style={{ fontFamily: 'Lora' }}
-                                ml="8"
+                                ml={{ base: "0", lg: "8" }}
                                 fontWeight="bold"
                                 mb={"2"}
                             >
-                                Age:
+                                Age     :
                             </Text>
                             <Select
                                 placeholder='Under 30 '
@@ -227,7 +227,7 @@ const Profile2 = () => {
                                 variant='solid'
                                 mt={-2}
                                 ml="3"
-                                width={"45%"}
+                                width={{ base: "83%", lg: "50%" }}
                             >
                                 <option value='option1'
                                     bg='#ffffff'  // Background color
@@ -237,17 +237,17 @@ const Profile2 = () => {
                                 <option value='option3'>Option 3</option>
                             </Select>
                         </Box>
-                        <Divider width={"210px"} mr={0} ml={12} borderColor="gray.300" />
+                        <Divider width={{ base: "290px", lg: "210px" }} mb={{ base: "2" }} mr={0} ml={{ base: "0", lg: "8" }} borderColor="gray.300" />
                         <Box display={"flex"}
                             mt={3}>
                             <Text
                                 color="gray"
                                 style={{ fontFamily: 'Lora' }}
-                                ml="8"
+                                ml={{ base: "0", lg: "8" }}
                                 fontWeight="bold"
                                 mb={"2"}
                             >
-                                Salary:
+                                Salary :
                             </Text>
                             <Select
                                 placeholder='K 20 - K 30 '
@@ -256,7 +256,7 @@ const Profile2 = () => {
                                 variant='solid'
                                 mt={-2}
                                 ml="3"
-                                width={"50%"}
+                                width={{ base: "76.2%", lg: "55%" }}
                             >
                                 <option value='option1'
                                     bg='#ffffff'  // Background color
@@ -266,17 +266,17 @@ const Profile2 = () => {
                                 <option value='option3'>Option 3</option>
                             </Select>
                         </Box>
-                        <Divider width={"210px"} mr={0} ml={8} borderColor="gray.300" />
+                        <Divider width={{ base: "290px", lg: "210px" }} mb={{ base: "2" }} mr={0} ml={{ base: "0", lg: "8" }} borderColor="gray.300" />
                         <Box display={"flex"}
                             mt={3}>
                             <Text
                                 color="gray"
                                 style={{ fontFamily: 'Lora' }}
-                                ml="8"
+                                ml={{ base: "0", lg: "8" }}
                                 fontWeight="bold"
                                 mb={"2"}
                             >
-                                Gender:
+                                Gender :
                             </Text>
                             <Select
                                 placeholder='Male '
@@ -285,7 +285,7 @@ const Profile2 = () => {
                                 variant='solid'
                                 mt={-2}
                                 ml="3"
-                                width={"35%"}
+                                width={{ base: "72.99%", lg: "35%" }}
                             >
                                 <option value='option1'
                                     bg='#ffffff'  // Background color
@@ -295,10 +295,10 @@ const Profile2 = () => {
                                 <option value='option3'>Option 3</option>
                             </Select>
                         </Box>
-                        <Divider width={"210px"} mr={0} ml={8} borderColor="gray.300" />
+                        <Divider width={{ base: "290px", lg: "210px" }} mb={{ base: "2" }} mr={0} ml={{ base: "0", lg: "8" }} borderColor="gray.300" />
 
                     </Box>
-                    <Box display={"flex"} ml={8} p={1}>
+                    <Box display={"flex"} ml={{ base: "-10", lg: "8" }} p={{ base: "2", lg: "4" }}>
                         <CircularProgressBar value={78} label="Loading..." />
                         <CircularProgressBar value={95} label="Loading..." />
                         <CircularProgressBar value={59} label="Loading..." />

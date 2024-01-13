@@ -35,8 +35,11 @@ const App = () => {
           <div style={{ marginTop: '25px', paddingBottom: "1px", width: '100%', background: '#fafafa' }}>
             <Profile />
           </div>
-          <div style={{ width: '100%',paddingTop:"1px", background: '#fafafa' }}>
+          <div style={{ width: '100%', paddingTop: "1px", background: '#ffffff' }}>
             <Profile2 />
+          </div>
+          <div style={{ width: '100%', paddingTop: "1px", background: '#ffffff' }}>
+            <Profile3 />
           </div>
         </Hide>
       </div>

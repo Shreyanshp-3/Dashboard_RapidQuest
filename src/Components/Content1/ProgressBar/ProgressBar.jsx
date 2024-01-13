@@ -2,14 +2,14 @@ import { CircularProgress, CircularProgressLabel, Box, Text } from "@chakra-ui/r
 
 const CircularProgressBar = ({ value, label }) => {
   return (
-    <Box textAlign="center">
+    <Box textAlign="center" >
       <CircularProgress
         value={value}
-        size="120px"
+        size={{base:"80px",lg:"120px"}}
         thickness="8px"
         textColor={"black"}
         color="#22d6aa"
-        fontSize={"6rem"}
+        fontSize={{base:"4rem",lg:"6rem"}}
         fontWeight={"bold"}
         trackColor="gray.100"
         pl={7}

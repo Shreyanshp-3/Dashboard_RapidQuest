@@ -1,7 +1,6 @@
 import React from 'react';
-import {  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Box } from '@chakra-ui/react';
-// import { Legend } from 'chart.js';
 
 const VerticalStackedBarChart = () => {
     const data = [
@@ -23,19 +22,19 @@ const VerticalStackedBarChart = () => {
     const formatCurrency = (value) => `$${value}`;
 
     return (
-        <Box className='graph' p={4}>
-            <BarChart width={850} height={270} data={data} barGap={8} barCategoryGap="24%">
-                {/* <Legend dataKey="name" /> */}
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis tickFormatter={formatCurrency} />
-                <Tooltip />
-                <Bar dataKey="dataset1" stackId="a" fill="#0800a3" name="Employer" />
-                <Bar dataKey="dataset2" stackId="a" fill="#4935ff" name="Employee" />
-                <Bar dataKey="dataset3" stackId="a" fill="#85afff" name="Total Interest" />
-            </BarChart>
+        <Box className='graph' ml={{ base: "-8", lg: "5" }} p={4}>
+            <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={data} barGap={8} barCategoryGap="24%">
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis tickFormatter={formatCurrency} />
+                    <Tooltip />
+                    <Bar dataKey="dataset1" stackId="a" fill="#0800a3" name="Employer" />
+                    <Bar dataKey="dataset2" stackId="a" fill="#4935ff" name="Employee" />
+                    <Bar dataKey="dataset3" stackId="a" fill="#85afff" name="Total Interest" />
+                </BarChart>
+            </ResponsiveContainer>
         </Box>
-
     );
 };
 
